@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin & Store Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="title"></div>
+
+    <div class="wel_cover">
+    <div class="welcome">
+        <h1>
+            Dip & Delight
+            <img src='mela-logo.png' alt="Logo" style="height: 40px; vertical-align: middle;" />
+            </h1>
+        <h2>Spin the Wheel, Win the Chocolate Dip!</h2>
+    </div>
+    </div>
+
+    
+    <div class="all">
+        <div class="register">
+            <h2>Enter Your Details</h2>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Enter Name" required><br>
+                <input type="text" id="instaId" placeholder="Instagram ID" required><br>
+                <input type="text" id="phone" placeholder="Phone Number" required><br>
+                <button id="submit_button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- SPIN WHEEL SECTION -->
+        <div class="wheel-container" style="display: none;">
+            <div id="wheel"></div>
+            <button id="spinButton">SPIN</button>
+        </div>
+
+        <!-- POPUP RESULT -->
+        <div id="popup" class="popup">
+            <p id="resultText"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+
+    </div>
+    <div class="excel_button">
+        <button id="downloadExcel" style="display:none;">Download Excel</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('bg1.png'); 
+    overflow: hidden;
+    margin: 0;
+    background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat; 
+}
+
+.welcome {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(231, 220, 220,1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(236, 152, 152, 0.84);
+    height:150px;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    /* font-size: 36px; */
+    color: rgba(165, 42, 42, 0.902);
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+        /* Optional: Make the text bold */
+}
+
+.welcome h1 img {
+    margin-left: 10px;
+}
+
+.welcome h2 {
+    font-size: 24px;
+    color: #9c27b0;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.welcome h1,
+.welcome h2 {
+    letter-spacing: 1px;
+}
+
+.welcome h2 {
+    font-style: italic;
+    color: #3e2723;
+}
+
+.title {
+    padding-top: 5%;
+}
+
+.wel_cover{
+    display: flex;
+    justify-content: center;
+    margin-top:-20px;
+}
+form input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 200px;
+}
+
+.all {
+    padding: 5pt;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.all > div {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    justify-content: center;
+}
+
+.welcome{
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border:#FFE4E1;
+    width: 50%;
+    
+}
+.all .register {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    background-color: rgba(98, 59, 4,0.8);
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+/* SPIN WHEEL STYLING */
+.all .wheel-container {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(98, 59, 4, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#submit_button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 25px;
+    /* Increased padding for better appearance */
+    background: rgb(158, 54, 54);
+    color: white;
+    font-size: 16px;
+    /* Set font size for better readability */
+    font-weight: bold;
+    /* Make the text stand out */
+    text-transform: uppercase;
+    /* Capitalize the text for impact */
+    border: none;
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow to give depth */
+}
+
+#submit_button:hover {
+    background: rgb(85, 25, 25);
+    /* Slightly lighter shade on hover */
+    transform: translateY(-3px);
+    /* Button "lifts" when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+#submit_button:active {
+    background: rgb(45, 2, 2);
+    /* Darker shade when clicked */
+    transform: translateY(1px);
+    /* Button "presses" down when clicked */
+}
+
+
+#wheel {
+    width: 300px;
+    /* Increased size */
+    height: 300px;
+    /* Increased size */
+    background: conic-gradient(#FF4D6D 0deg 60deg,
+            /* 🍓 Strawberry Pink */
+            #FFE4E1 60deg 120deg,
+            /* ☁ Marshmallow White */
+            #efb03d 120deg 180deg,
+            /* 🍪 Waffle Golden */
+            #FFE135 180deg 240deg,
+            /* 🍌 Banana Yellow */
+            #FF6699 240deg 300deg,
+            /* 💖 Little Hearts Pink */
+            #C89682 300deg 360deg
+            /* better luck next time */
+        );
+    border-radius: 50%;
+    border: 8px solid #A52A2A;
+    /* Slightly thicker Chocolate Brown border */
+    transition: transform 6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
+        inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+
+
+#spinButton {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 25px;
+    /* Increased padding for better clickability */
+    background: rgb(158, 54, 54);
+    color: white;
+    font-size: 16px;
+    /* Adjust font size for better readability */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    border: none;
+    border-radius: 8px;
+    /* More rounded corners for a modern look */
+    cursor: pointer;
+    text-transform: uppercase;
+    /* Capitalized text for a strong appearance */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
+    margin-bottom: 20px;
+}
+
+#spinButton:hover {
+    background: rgb(99, 28, 28);
+    /* Slightly lighter shade for hover effect */
+    transform: translateY(-3px);
+    /* Makes the button pop upwards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Shadow effect on hover */
+}
+
+#spinButton:active {
+    background: rgb(45, 2, 2);
+    /* Darker shade when button is clicked */
+    transform: translateY(1px);
+    /* Button "presses" down when clicked */
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
