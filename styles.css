@@ -6,6 +6,7 @@ body {
     background-size: cover; 
      background-position: center; 
      background-repeat: no-repeat; 
+    min-height: 100vh;
 }
 
 .welcome {
@@ -99,8 +100,11 @@ form input {
     place-items: center;
     background-color: rgba(98, 59, 4,0.8);
     color: white;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 90%;
+    max-height: 400px;
+        /* Limits height */
+    /* margin-top: auto;
+    margin-bottom: auto; */
     
 }
 
@@ -241,4 +245,18 @@ form input {
     text-align: center;
     color: black;
     font-size: large;
+}
+
+
+@media (max-width: 600px) {
+    .register {
+        width: 90%;
+        max-height: 350px;
+        /* Adjust form height on small screens */
+    }
+
+    input,
+    button {
+        width: 90%;
+    }
 }
