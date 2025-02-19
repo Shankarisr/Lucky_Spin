@@ -100,13 +100,23 @@ const bodyParser = require("body-parser");
 const XLSX = require("xlsx");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: "*", methods: "GET,POST", allowedHeaders: "Content-Type" }));
+// app.use(cors({ origin: "*", methods: "GET,POST", allowedHeaders: "Content-Type" }));
+app.use(cors({
+    origin: "https://lucky-spin-1.onrender.com", // 🔹 Replace this with your actual frontend URL
+    methods: "GET, POST",
+    allowedHeaders: "Content-Type"
+}));
+
 app.use(bodyParser.json());
 
-const JSON_FILE = "test.json";
-const EXCEL_FILE = "test.xlsx";
+// const JSON_FILE = "test.json";
+// const EXCEL_FILE = "test.xlsx";
+
+const JSON_FILE = "./data/test.json";
+const EXCEL_FILE = "./data/test.xlsx";
+
 
 // **Route to Save User Data & Convert to Excel Automatically**
 app.post("/saveUser", (req, res) => {
