@@ -252,7 +252,9 @@ form input {
 @media (max-width: 600px) {
     .register {
         width: 90%;
-        /* max-height: 350px; */
+        max-height: 350px; 
+        padding: 10px;
+
     }
     .wel_cover{
         width: 90%;
