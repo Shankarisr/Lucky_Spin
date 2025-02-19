@@ -72,7 +72,7 @@ document.getElementById("spinButton").addEventListener("click", async function(e
         const userData = { name, instaId, phone, spinResult };
 
         try {
-            const response = await fetch("http://127.0.0.1:5000/saveUser", {
+            const response = await fetch("https://lucky-spin-1.onrender.com/saveUser", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(userData)
