@@ -100,7 +100,7 @@ form input {
     place-items: center;
     background-color: rgba(98, 59, 4,0.8);
     color: white;
-    /* max-width: 90%; */
+    max-width: 90%; */
     max-height: 400px;
         /* Limits height */
     /* margin-top: auto;
