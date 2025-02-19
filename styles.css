@@ -253,10 +253,14 @@ form input {
 @media (max-width: 600px) {
     .register {
         width: 90%;
-        max-height: 350px; /* Adjust form height on small screens */
+        /* max-height: 350px; */
     }
     .wel_cover{
         width: 90%;
+    }
+    .welcome{
+        width: 90%;
+        
     }
     .wheel-container{
         width: 90%;
