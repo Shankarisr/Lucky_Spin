@@ -52,7 +52,7 @@ body {
 }
 
 .title {
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .wel_cover{
@@ -119,6 +119,7 @@ form input {
     padding-bottom: 5px;
     margin-top: auto;
     margin-bottom: auto;
+    width: 100%;
 }
 
 
@@ -252,12 +253,13 @@ form input {
 @media (max-width: 600px) {
     .register {
         width: 90%;
-        max-height: 350px;
-        /* Adjust form height on small screens */
+        max-height: 350px; /* Adjust form height on small screens */
     }
-
-    input,
-    button {
+    .wel_cover{
         width: 90%;
+    }
+    .wheel-container{
+        width: 90%;
+        max-height: 350px;
     }
 }
