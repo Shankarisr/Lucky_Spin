@@ -291,6 +291,7 @@ form input {
             /* Centers it horizontally */
             display: block;
             /* Ensures it's treated as a block element */
+            text-align: center;
     }
     .welcome{
         width: 90%;
