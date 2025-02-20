@@ -104,7 +104,7 @@ const PORT = process.env.PORT || 5000;
 
 // app.use(cors({ origin: "*", methods: "GET,POST", allowedHeaders: "Content-Type" }));
 app.use(cors({
-    origin: ["https://lucky-spin-1.onrender.com", "http://127.0.0.1:3000", "https://shankarisr.github.io/Lucky_Spin/"], // 🔹 Replace this with your actual frontend URL
+    origin: ["https://lucky-spin-1.onrender.com", "http://127.0.0.1:3000", "https://shankarisr.github.io"], // 🔹 Replace this with your actual frontend URL
     methods: "GET, POST",
     allowedHeaders: "Content-Type"
 }));
