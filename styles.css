@@ -285,6 +285,12 @@ form input {
     }
     .wel_cover{
         width: 90%;
+        max-width: 400px;
+            /* Optional: Prevents it from becoming too wide */
+            margin: 0 auto;
+            /* Centers it horizontally */
+            display: block;
+            /* Ensures it's treated as a block element */
     }
     .welcome{
         width: 90%;
