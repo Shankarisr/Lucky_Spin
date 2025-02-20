@@ -284,14 +284,16 @@ form input {
 
     }
     .wel_cover{
-        width: 90%;
-        max-width: 400px;
-            /* Optional: Prevents it from becoming too wide */
-            margin: 0 auto;
-            /* Centers it horizontally */
-            display: block;
-            /* Ensures it's treated as a block element */
+        display: flex;
+            justify-content: center;
+            /* Centers horizontally */
+            align-items: center;
+            /* Centers vertically */
             text-align: center;
+            width: 90%;
+            /* Adjust width as needed */
+            margin: 0 auto;
+            /* Centers the container itself */
     }
     .welcome{
         width: 90%;
