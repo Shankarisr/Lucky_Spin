@@ -103,8 +103,8 @@ form input {
     max-width: 90%; 
     max-height: 400px;
         /* Limits height */
-    /* margin-top: auto;
-    margin-bottom: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
     
 }
 
