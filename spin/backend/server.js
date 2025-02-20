@@ -114,8 +114,8 @@ app.use(bodyParser.json());
 // const JSON_FILE = "test.json";
 // const EXCEL_FILE = "test.xlsx";
 
-const JSON_FILE = "./data/test.json";
-const EXCEL_FILE = "./data/test.xlsx";
+const JSON_FILE = "./test.json";
+const EXCEL_FILE = "./test.xlsx";
 
 
 // **Route to Save User Data & Convert to Excel Automatically**
