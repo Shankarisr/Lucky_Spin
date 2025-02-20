@@ -31,7 +31,6 @@ document.getElementById("userForm").addEventListener("submit", async function(ev
         if (confirmation) {
             document.querySelector(".wheel-container").style.display = "block";
             document.querySelector(".register").style.display = "none";
-            document.getElementById("downloadExcel").style.display = "block"; // Show Download button
         }
     }
 });
