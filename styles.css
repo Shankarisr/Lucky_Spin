@@ -94,17 +94,37 @@ form input {
     
 }
 .all .register {
-    display: grid;
+    /* display: grid;
     align-items: center;
     text-align: center;
     place-items: center;
     background-color: rgba(98, 59, 4,0.8);
     color: white;
+    width:100%;
     max-width: 90%; 
     max-height: 400px;
-        /* Limits height */
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; */
+    display: flex;
+        /* Change grid to flex for better alignment */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        justify-content: center;
+        /* Center items vertically */
+        text-align: center;
+        background-color: rgba(98, 59, 4, 0.8);
+        color: white;
+        width: 90%;
+        /* Ensure responsiveness */
+        max-width: 400px;
+        /* Prevent excessive width */
+        min-height: 300px;
+        /* Maintain a minimum height */
+        padding: 20px;
+        border-radius: 10px;
+        /* Optional: Rounded corners */
     
 }
 
@@ -251,9 +271,16 @@ form input {
 
 @media (max-width: 600px) {
     .register {
-        width: 90%;
+        /* width: 90%;
         max-height: 350px; 
-        padding: 10px;
+        padding: 10px; */
+        width: 90%;
+            /* Adjust width for smaller screens */
+            min-height: 250px;
+            /* Adjust height */
+            max-height: 350px;
+            /* Prevent excessive shrinking */
+            padding: 15px;
 
     }
     .wel_cover{
