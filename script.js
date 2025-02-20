@@ -95,24 +95,24 @@ function closePopup() {
 }
 
 // DOWNLOAD EXCEL
-document.getElementById("downloadExcel").addEventListener("click", async function() {
-    try {
-        const response = await fetch("http://127.0.0.1:5000/convertToExcel");
+// document.getElementById("downloadExcel").addEventListener("click", async function() {
+//     try {
+//         const response = await fetch("https://lucky-spin-1.onrender.com/convertToExcel");
 
-        if (!response.ok) {
-            throw new Error("Failed to download Excel file.");
-        }
+//         if (!response.ok) {
+//             throw new Error("Failed to download Excel file.");
+//         }
 
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "userdata.xlsx";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    } catch (error) {
-        console.error("Error downloading Excel file:", error);
-        alert("Failed to download Excel file.");
-    }
-});
+//         const blob = await response.blob();
+//         const url = window.URL.createObjectURL(blob);
+//         const a = document.createElement("a");
+//         a.href = url;
+//         a.download = "userdata.xlsx";
+//         document.body.appendChild(a);
+//         a.click();
+//         document.body.removeChild(a);
+//     } catch (error) {
+//         console.error("Error downloading Excel file:", error);
+//         alert("Failed to download Excel file.");
+//     }
+// });
